@@ -41,7 +41,7 @@ public class TutorialManager : MonoBehaviour
                 tutorialImage[i] = tutorialImagesItems.transform.GetChild(i).gameObject;
 
                 // Tutorial Animation  Dotween & color
-                tutorialImage[i].transform.DOScale(1.5f, 1).SetLoops(-1);
+                tutorialImage[i].transform.DOScale(1f, 0.75f).SetLoops(-1);
                 tutorialImage[i].GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.35f);
 
                 Invoke("DestoroyerObject", tutorialAnimationDuration);
