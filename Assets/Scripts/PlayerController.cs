@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
             rongDorsS.LossScren.SetActive(true);
             AudioManager.instance.PlaySFX("Loseeffect");
             gameOver = true;
-            Debug.Log("game over");
+            //Debug.Log("game over");
         }
     }
 
@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour
             scorUpdate.coinSpriteUpdate();
         }
         money = money;
-        Debug.Log("money  : " + money);
+        //Debug.Log("money  : " + money);
         scorUpdate.updateScor(money);
     }
 
@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour
         int my›nt;
         my›nt = Mathf.CeilToInt(health);
         health = health;
-        Debug.Log("health  : " + health);
+        //Debug.Log("health  : " + health);
         scorUpdate.updateDamege(my›nt);
     }
 }
